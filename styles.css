@@ -1,0 +1,58 @@
+* {
+    font-family: "Roboto", "Verdana", sans-serif;
+    font-size: 18px;
+}
+
+.header,
+.footer {
+    background-color: #1f2937;
+    color: #F9FAF8;
+}
+
+.section.odd {
+    background-color: #F9FAF8;
+}
+
+.section.even {
+    background-color: #E5E7EB;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.menu-logo {
+    font-size: 24px;
+}
+.menu-right,
+.hero-text {
+    color: #E5E7EB;
+}
+
+.info.title {
+    color: 1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.quote.text {
+    font-size: 36px;
+    font-weight: 300; /*waarom werkt dit niet?*/
+    font-style: italic;
+    color: #1F2937;
+}
+
+.cta {
+    background-color: #3882F6;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+}
+
+button.cta {
+    border: 2px solid #F9FAF8;
+}
