@@ -24,6 +24,78 @@
     background-color: #E5E7EB;
 }
 
+.header {
+    padding: 0 150px 100px;
+}
+
+.menu {
+    display: flex;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.menu-logo {
+    margin-right: auto;
+    flex: none;
+    font-size: 24px;
+}
+
+.menu-right {
+    color: #E5E7EB;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & > button {
+        margin-top: auto;
+        align-self: flex-start;
+    }
+}
+
+.hero-right {
+    flex: 0 0 500px;
+    & > img {
+        /* height: 100%; */
+        max-width: 100%;
+    }
+}
+
+/* if you want to have the img width sized tot half of the hero: 
+.hero-left {
+    flex: 1 1 50%;
+}
+
+.hero-right {
+    flex: 1 1 50%;
+    & > img {
+        max-width: 100%;
+    }
+} */
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+
+.hero-text {
+    color: #E5E7EB;
+}
+
+
 .section.info {
     flex-direction: column;
     padding-bottom: 100px;
@@ -63,18 +135,7 @@
     margin-top: 10px;
 }
 
-.hero-title {
-    font-size: 48px;
-    font-weight: 900;
-}
 
-.menu-logo {
-    font-size: 24px;
-}
-.menu-right,
-.hero-text {
-    color: #E5E7EB;
-}
 
 
 
@@ -93,6 +154,8 @@ button {
     background-color: #3882F6;
     color: #F9FAF8;
     border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
 }
 
 button.cta {
