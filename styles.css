@@ -12,8 +12,8 @@
 
 .section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     padding: 100px 160px;
 }
 
@@ -27,6 +27,7 @@
 
 .header {
     padding: 0 160px 100px;
+    justify-content: space-between;
 }
 
 .menu {
@@ -97,7 +98,6 @@
 
 .section.info {
     flex-direction: column;
-    justify-content: center;
     padding-top: 60px;
     padding-bottom: 120px;
 }
@@ -113,11 +113,11 @@
 .info.imgs {
     display: flex;
     flex: 0 1 0px;;
-    justify-content:space-between;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    min-width: 330px;
+    min-width: 360px;
 }
 
 .info.img {
@@ -153,12 +153,14 @@
     font-weight: 300; /*waarom werkt dit niet?*/
     font-style: italic;
     color: #1F2937;
+    flex: 1 0 auto;
     min-width: 360px;
 }
 
 .quote.author {
-    align-self: end;
+    align-self: flex-end;
     margin-top: 10px;
+    white-space: nowrap; /*dit zorgt ervoor dat er geen line-breaks zijn in de tekst*/
 }
 
 .section.cta {
@@ -186,6 +188,7 @@
 .cta-left {
     display: flex;
     flex-direction: column;
+    flex: 1 0 160px;
     margin-right: 20px;
 }
 
