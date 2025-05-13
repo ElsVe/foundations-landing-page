@@ -1,3 +1,8 @@
+html,
+body {
+    margin: 0;
+}
+
 * {
     font-family: "Roboto", "Verdana", sans-serif;
     font-size: 18px;
@@ -204,6 +209,13 @@ button {
 button.cta {
     border: 2px solid #F9FAF8;
     margin-left: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 div {
