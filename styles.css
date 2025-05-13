@@ -12,8 +12,9 @@
 
 .section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 100px 160px;
 }
 
 .section.odd {
@@ -25,7 +26,7 @@
 }
 
 .header {
-    padding: 0 150px 100px;
+    padding: 0 160px 100px;
 }
 
 .menu {
@@ -90,16 +91,15 @@
     font-weight: 900;
 }
 
-
 .hero-text {
     color: #E5E7EB;
 }
 
-
 .section.info {
     flex-direction: column;
     justify-content: center;
-    padding: 60px 240px 120px 240px;;
+    padding-top: 60px;
+    padding-bottom: 120px;
 }
 
 .info.title {
@@ -143,7 +143,8 @@
 }
 
 .section.quote {
-    padding: 100px 240px;
+    padding-right: 320px;
+    padding-left: 320px;
     flex-direction: column;
 }
 
@@ -153,7 +154,6 @@
     font-style: italic;
     color: #1F2937;
     min-width: 360px;
-
 }
 
 .quote.author {
@@ -161,8 +161,32 @@
     margin-top: 10px;
 }
 
+.section.cta {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.box.cta {
+    padding: 40px 80px;
+    flex: 1;
+    display: flex;
+    align-items: start;
+    border-radius: 10px;
+}
+
+.cta.title {
+    font-weight: 900;
+}
+
 .cta {
     background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
 }
 
 button {
@@ -171,10 +195,12 @@ button {
     border: none;
     border-radius: 5px;
     padding: 10px 40px;
+    flex: none;
 }
 
 button.cta {
     border: 2px solid #F9FAF8;
+    margin-left: auto;
 }
 
 div {
